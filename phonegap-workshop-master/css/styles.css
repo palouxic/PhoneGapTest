@@ -64,6 +64,16 @@ body {
     border-bottom: solid 1px #666;
 }
 
+.scroll {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    position: absolute;
+    top: 84px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
 input[type="search"] {
     width:100%;
 	border: none;
