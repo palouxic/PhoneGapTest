@@ -1,8 +1,5 @@
 var HomeView = function(store){
 
-	HomeView.template = _.template($("#home-tpl").html());
-	HomeView.liTemplate = _.template($("#employee-li-tpl").html());
-
     this.findByName = function() {
 	
 		console.log("FIND BY NAME");
@@ -30,3 +27,8 @@ var HomeView = function(store){
 	this.initialize();
 	
 }
+	
+_.templateSettings.variable = "rc";
+
+HomeView.template = _.template($("#home-tpl").html());
+HomeView.liTemplate = _.template($("#employee-li-tpl").html());
